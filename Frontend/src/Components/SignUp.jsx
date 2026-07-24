@@ -18,7 +18,7 @@ useEffect(()=>
 })
     const handleSignUp= async ()=>{
         
-        let result= await fetch('http://localhost:5000/signup',{
+        let result= await fetch('https://todo-app-backend-rirx.onrender.com/signup',{
             method:'POST',
             body:JSON.stringify(userData),
             headers:{
