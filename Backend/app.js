@@ -12,7 +12,7 @@ dotenv.config();
 
 app.use(express.json());
 app.use(cors({
-  origin:'https://todo-app-backend-rirx.onrender.com',
+  origin:'https://todo-app-frontend-pqxc.onrender.com',
   credentials:true
 }));
 app.use(cookieParser())
