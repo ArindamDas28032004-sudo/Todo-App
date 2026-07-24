@@ -10,7 +10,7 @@ function AddTask()
     const handleAddTask= async()=>
     {
         console.log(taskData);
-        let result=  await fetch('http://localhost:5000/add-task',{
+        let result=  await fetch('https://todo-app-backend-rirx.onrender.com/add-task',{
             method:'POST',
             body:JSON.stringify(taskData),
             credentials:'include',
