@@ -20,7 +20,7 @@ function UpdateTask()
 
     const getTask= async (id)=>
     {
-        let task=await fetch(`http://localhost:5000/task/`+id)
+        let task=await fetch(`https://todo-app-backend-rirx.onrender.com/task/`+id)
         task = await task.json()
         if(task.result)
         {
@@ -32,7 +32,7 @@ function UpdateTask()
     const updateTask= async ()=>
     {
         console.log("function call",taskData);
-        let task= await fetch("http://localhost:5000/update-task",{
+        let task= await fetch("https://todo-app-backend-rirx.onrender.com/update-task",{
             method:'PUT',
             body:JSON.stringify(taskData),
             headers:{
