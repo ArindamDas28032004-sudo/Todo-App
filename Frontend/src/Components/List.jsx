@@ -9,7 +9,7 @@ function List() {
     getListData();
   },[]);
   const getListData = async () => {
-    let list = await fetch("http://localhost:5000/tasks",{
+    let list = await fetch("https://todo-app-backend-rirx.onrender.com/tasks",{
       credentials:'include'
     });
     list = await list.json();
@@ -23,7 +23,7 @@ function List() {
   };
 
   const deleteTask = async (id) => {
-    let item = await fetch("http://localhost:5000/delete/" + id, {
+    let item = await fetch("https://todo-app-backend-rirx.onrender.com/delete/" + id, {
       method: "delete",
        credentials:'include',
     });
@@ -64,7 +64,7 @@ function List() {
   }
 const deleteMultiple= async ()=>
 {
-  let item = await fetch("http://localhost:5000/delete-multiple/",  {
+  let item = await fetch("https://todo-app-backend-rirx.onrender.com/delete-multiple/",  {
       method: "delete",
        credentials:'include',
       body:JSON.stringify(selectedTask),
