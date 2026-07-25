@@ -18,7 +18,7 @@ function List() {
     }
 
    else{
-    alert('try after some time');
+    alert('tasks try after some time');
    }
   };
 
@@ -34,7 +34,7 @@ function List() {
     }
     else
     {
-      alert('try after some time');
+      alert(' delete try after some time');
     }
   };
 
@@ -79,7 +79,7 @@ const deleteMultiple= async ()=>
     }
     else
     {
-      alert('try after some time');
+      alert(' delte-multiple try after some time');
     }
 }
 
